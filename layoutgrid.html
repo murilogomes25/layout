@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        body {
+            
+            margin: 0 auto;
+            max-width: 70%;
+            background-color: white;
+        }
+
+        .cabecalho {
+            
+            background-color: red;
+            text-align: center;
+            color: black;
+            font-size: larger;
+            font-style: inherit;
+            height: 150px; 
+        }
+
+        .links{
+            display: flex;
+            background-color: white;
+            border: solid;
+            border-color: black;
+            height: 30px;
+            flex-direction: row;
+            justify-content: end;
+            color: whitesmoke;
+        }
+        .links :hover {
+            background-color: magenta;
+            color: black;
+        }
+        .grid-container {
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1.25fr 3fr 1fr;
+            
+        }
+
+        #grid1 {
+            padding: 5px;
+            font-size: 20px;
+            text-align: left;
+            height: 600px;
+            background-color: #E6E6E6;
+        }
+        #grid2 {
+            padding: 5px;
+            font-size: 20px;
+            text-align: left;
+            height: 600px;
+            
+        }
+        #grid3 {
+            padding: 5px;
+            font-size: 20px;
+            text-align: left;
+            height: 600px;
+            background-color: #BDBDBD;
+        }
+        
+        #ft0 {
+            padding: 5px;
+            background-color: grey;
+            margin: 10px;
+            height: 250px;
+            
+        }
+
+
+        #ft1 {
+            padding: 5px;
+            background-color: grey;
+            margin: 0px;
+            height: 50px;
+            width: 200px;
+
+        }
+        #ft2 {
+            padding: 5px;
+            background-color: grey;
+            margin: 10px;
+            height: 70px;
+            width: 200px;
+        }
+        
+
+        .fts {
+            padding: 5px;
+            background-color: grey;
+            margin-bottom: 10px;
+            height: 50px;
+            width: 270px;
+
+        }
+        
+        @media screen and (max-width: 680px) {
+            .links {
+                flex-direction: column;
+            }
+            .links :hover{
+                background-color: aqua;
+            }
+            .grid-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+
+        <h1>Maior do Brasil</h1>
+        <h2>São Paulo Futebol Clube</h2>
+
+    </div>
+    
+    <nav class="links">
+        <button><a href="https://www.youtube.com/watch?v=xE5TaJJAyU0"target = blank><img src="manel.jpg"height=12px></a></button>
+        <button>link</button>
+        <button>link</button>
+        <button>link</button>
+    </nav>
+
+    <div class="grid-container">
+    
+        <div id="grid1">
+            <h2>Meu perfil</h2>
+            <h3>aaaaaa</h3>
+            <div id ="ft1">imagem</div>
+            <p>texto qualquer</p>
+            <h2>mais texto</h2>
+            <p>texto aleatorio</p>
+            
+            <div class ="fts">imagem</div>
+            <div class ="fts">imagem</div>
+            <div class ="fts">imagem</div>
+        </div>
+
+        <div id="grid2">
+            <h2>Salve o Tricolor Paulista!</h2>
+            <p>nao ironicamente...</p>
+            <div id="ft0">imagem</div>
+        </div>
+    
+        <div id="grid3">
+            <h2>Barra lateral</h2>
+            <div id ="ft2">imagem</div>
+        </div>
+    </div>
+    
+</body>
+</html>
